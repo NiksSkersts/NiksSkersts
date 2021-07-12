@@ -1,0 +1,15 @@
+gnome
+thermald
+acpid
+sof-firmware
+sof-tools
+linux
+intel-ucode
+base
+base-devel
+bash-completion
+iwd
+firefox
+xdg-desktop-portal
+keepassxc
+vim
