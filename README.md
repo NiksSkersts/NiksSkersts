@@ -13,4 +13,4 @@ For my university stuff, you can check out:
 
 Contact me :
 - [LinkedIn](https://www.linkedin.com/in/niks-skersts/) - It exists, but I don't really use it.
-- [Email](skersts98@outlook.lv)
+- [Email](mailto:skersts98@outlook.lv)
