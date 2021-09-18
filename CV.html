@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Niks Šķērsts CV</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/e353dd0d62.js"></script>
+    <style>
+        page[size="A4"] {
+            background: white;
+            width: 21cm;
+            height: 29.7cm;
+            display: block;
+            margin: 0 auto 0.5cm;
+            box-shadow: 0 0 0.5cm rgba(0, 0, 0, 1);
+            border: 1.25cm solid transparent;
+        }
+
+        @media print {
+            body, page[size="A4"] {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+
+        body {
+            background: rgb(204, 204, 204);
+            font-size: 12pt;
+            font-family: "Times New Roman", Times, serif;
+            color: black;
+        }
+
+        #wrapper {
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-rows: 10% 20% 30% 20% 20%;
+        }
+
+        #header {
+            width: 100%;
+            height: inherit;
+            margin: auto;
+            display: grid;
+            grid-template-rows: 75% 25%;
+            grid-template-columns: 25% 35% 20% 20%;
+        }
+
+        #header #name {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row: 1;
+        }
+
+        #header h4 {
+            border-left: 1px black solid;
+            border-right: 1px black solid;
+            border-collapse: collapse;
+            width: inherit;
+            margin: auto;
+            height: inherit;
+            text-align: center;
+        }
+
+        #header #phone_number {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #header #email {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        #header #github {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .section_wrapper {
+            border-top: 2px black solid;
+            height: inherit;
+            width: inherit;
+            margin: auto;
+            display: grid;
+            grid-template-rows: 10% 30% 30% 30%;
+            grid-template-columns: 70% 30%;
+        }
+
+        .entry_wrapper {
+        }
+
+        .entry_wrapper.ew_1 {
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        .entry_wrapper.ew_2 {
+            grid-row: 3;
+            grid-column: 1;
+        }
+
+        .entry_wrapper.ew_3 {
+            grid-row: 4;
+            grid-column: 1;
+        }
+
+        .entry_wrapper.additional p {
+            margin: 0;
+            font-style: italic;
+            font-size: 16px;
+            text-align: right;
+        }
+
+        .entry_wrapper.ewa_1 {
+            grid-row: 2;
+            grid-column: 2;
+        }
+
+        .entry_wrapper.ewa_2 {
+            grid-row: 3;
+            grid-column: 2;
+        }
+
+        .entry_wrapper.ewa_3 {
+            grid-row: 4;
+            grid-column: 2;
+        }
+
+        .section_wrapper .title {
+            grid-row: 1;
+            margin: auto auto auto 0;
+        }
+
+        .subtext_list {
+            margin: auto;
+        }
+
+        .entry_subtext p {
+            margin: 0;
+        }
+
+        .entry_subtext {
+            margin: 0;
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        .entry_title {
+            margin: auto;
+            font-weight: bold;
+        }
+
+        .skills {
+            grid-template-rows: 10% 90%;
+            grid-template-columns: auto;
+        }
+
+        .skills .sl_title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<page size="A4">
+    <div id="wrapper">
+        <div id="header">
+            <h1 id="name">Niks Šķērsts</h1>
+            <h4 id="phone_number"><i class="fas fa-phone"></i> <a href="tel:+371 28396048">+37128396048</a> </h4>
+            <h4 id="email"><i class="fas fa-envelope"></i> <a href="mailto:niks_skersts@tutanota.com">niks_skersts@tutanota.com</a>
+            </h4>
+            <h4 id="github"><i class="fab fa-github"></i> <a href="https://github.com/NiksSkersts">NiksSkersts</a></h4>
+            <h4 id="linkedin"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/niks-skersts/">niks-skersts</a>
+            </h4>
+        </div>
+        <div class="section_wrapper">
+            <p class="title">Izglītība</p>
+            <div class="entry_wrapper ew_1">
+                <p class="entry_title">Latvijas Lauksaimniecības Universitāte</p>
+                <p class="entry_subtext">Inženierzinātņu bakalaura grāds datorvadībā un datorzinātnē</p>
+            </div>
+            <div class="entry_wrapper ew_2">
+                <p class="entry_title">Smiltenes Tehnikums</p>
+                <div class="entry_subtext">
+                    <p>Ēdināšanas pakalpojumu speciālists, pavārs</p>
+                    <ul class="subtext_list">
+                        <li>Iegūtas zināšanas viesmīlībā, ēdināšanā un uzņēmējdarbībā,</li>
+                        <li>2 nedēļu Erasmus prakse ”Cyprus traditional food, bread and cheese”,</li>
+                        <li>Iegūta atzinība par teicamām sekmēm absolvējot.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="entry_wrapper ewa_1 additional">
+                <p>Jelgava</p>
+                <p>Sep.2019 - Pašlaik</p>
+            </div>
+            <div class="entry_wrapper ewa_2 additional">
+                <p>Smiltene</p>
+                <p>Sep.2014 - 2018</p>
+            </div>
+        </div>
+        <div class="section_wrapper">
+            <p class="title">Pieredze</p>
+            <div class="entry_wrapper ew_1">
+                <p class="entry_title">Pavārs</p>
+                <div class="entry_subtext">
+                    <p>Rimi Latvia</p>
+                    <ul class="subtext_list">
+                        <li>Salātu un suši ražošana,</li>
+                        <li>Laika un uzdevumu menedžments,</li>
+                        <li>Dokumentācijas rakstīšana, palīdzība IT jautājumos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="entry_wrapper ew_2">
+                <p class="entry_title">Chef de partie</p>
+                <div class="entry_subtext">
+                    <p>The BayTree Restaurant and Belvedere Bed and Breakfast</p>
+                    <ul class="subtext_list">
+                        <li>Maizes mīklas gatavošana un cepšana (Sourdough un Brioche),</li>
+                        <li>Standarta un vegānisko desertu gatavošana,</li>
+                        <li>Dokumentācija, Inventūra un ēdiena cenas kalkulācija.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="entry_wrapper ew_3">
+                <p class="entry_title">Commis Chef</p>
+                <div class="entry_subtext">
+                    <p>The BayTree Restaurant and Belvedere Bed and Breakfast</p>
+                    <ul class="subtext_list">
+                        <li>Dārzeņu, gaļas un zivs pirmapstrāde,</li>
+                        <li>Vieglāku ēdienu gatavošana, (Buljons, kartupeļu biezputra u.c),</li>
+                        <li>Viesu uzņemšana.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="entry_wrapper ewa_1 additional">
+                <p>Jelgava, Latvija</p>
+                <p>Nov. 2019 – Maijs 2021</p>
+            </div>
+            <div class="entry_wrapper ewa_2 additional">
+                <p>Carlingford, Republic of Ireland</p>
+                <p>Jūnijs 2018 – Nov 2019</p>
+            </div>
+            <div class="entry_wrapper ewa_3 additional">
+                <p>Carlingford, Republic of Ireland</p>
+                <p>Jul 2017 – Nov. 2017</p>
+            </div>
+        </div>
+        <div class="skills section_wrapper">
+            <p class="title">Prasmes</p>
+            <ul class="skill_list">
+                <li><span class="sl_title">Valodas:</span> Latviešu - dzimtā, Angļu - B2, Krievu - vidēja.</li>
+                <li><span class="sl_title">Programmēšanas, dizaina valodas:</span> C#, C++ (pašmācība),SQL un PLSQL,
+                    Javascript/JQuery, HTML/CSS.
+                </li>
+                <li><span class="sl_title">Izstrādātāja rīki:</span> Git, Visual Studio un Code, Blender, Visio,
+                    DBeaver, Windows Subsystem for
+                    Linux, Hyper-V, KVM, Nginx.
+                </li>
+                <li><span class="sl_title">Frameworks:</span> ASP.NET, WPF, Windows Forms, WWW - Bootstrap un Foundation
+                    6. Pašlaik
+                    apgūstu - Monogame
+                </li>
+                <li><span class="sl_title">Datubāzes:</span> Oracle XE, Postgresql, Sqlite.</li>
+                <li><span class="sl_title">Operētājsistēmas:</span> Windows, MacOS, Linux Distribūcijas (Arch, Deb,
+                    Fedora), FreeBSD.
+                </li>
+                <li><span class="sl_title">Citas:</span> Microsoft/Libre/Google dokumentu rediģētāji, LaTex, Google
+                    Search,
+                    Terminālis un CMD.
+                </li>
+            </ul>
+        </div>
+        <div class="skills section_wrapper">
+            <p class="title">Intereses</p>
+            <ul class="skill_list">
+                <li><span class="sl_title">Tehniskās:</span> DIY, Datoru (stacionāro/portatīvo) komplementēšana un
+                    uzlabošana. Android sistēmu
+                    nomaiņa, viedtālruņu pārinstalēšana un izjaukšana.
+                </li>
+                <li><span class="sl_title">Zinātniskās:</span> Kosmoss, fizika, politika, finanšu pārvaldība,
+                    uzturzinātne.
+                </li>
+                <li><span class="sl_title">Kreatīvās:</span> Fotogrāfēšana ar DSLR - hobijists, grāmatu lasīšana -
+                    latviešu un angļu valodās, RAW
+                    foto apstrāde, Augkopība.
+                </li>
+            </ul>
+        </div>
+    </div>
+</page>
+
+
+</body>
+</html>
